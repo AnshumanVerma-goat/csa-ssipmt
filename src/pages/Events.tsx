@@ -51,6 +51,7 @@ const Events = () => {
 
   const filteredEvents = events.filter((event) => event.session === selectedSession);
 
+
   return (
     <div className="py-12">
       <div className="container mx-auto px-4">
@@ -59,6 +60,27 @@ const Events = () => {
           <p className="text-lg text-muted-foreground">
             Explore our calendar of events, competitions, and workshops
           </p>
+        </div>
+
+        {/* General Gallery Section */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold mb-4">General Gallery</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-4">
+            {/* Placeholder images, replace with real images as needed */}
+            {[1,2,3,4,5,6,7,8].map((id) => (
+              <div key={id} className="aspect-square bg-muted flex items-center justify-center rounded-lg shadow">
+                <span className="text-3xl">📸</span>
+              </div>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-4">
+            <a href="/event-reports.pdf" download>
+              <Button variant="secondary">Download Last 3 Years Event Report (PDF)</Button>
+            </a>
+            <Button asChild variant="default">
+              <Link to="/Registration">Register for an Event</Link>
+            </Button>
+          </div>
         </div>
 
         <Tabs defaultValue="2024-25" className="mb-8">
@@ -132,17 +154,47 @@ const Events = () => {
           ))}
         </Tabs>
 
-        {/* Calendar View Placeholder */}
+        {/* Calendar Section */}
         <Card className="mt-8">
           <CardHeader>
-            <CardTitle>Monthly Calendar View</CardTitle>
+            <CardTitle>Event Calendar</CardTitle>
             <CardDescription>
-              Interactive calendar showing all events for the selected session
+              View all events by session and month. Click a day to see events scheduled.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="text-center py-8 text-muted-foreground">
-              Calendar view will be implemented here with event markers on specific dates
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Session Selector */}
+              <div>
+                <h3 className="font-semibold mb-2">Session</h3>
+                <div className="flex gap-2 flex-wrap">
+                  {["Jan–June", "July–Dec"].map((session, idx) => (
+                    <Button key={session} variant="outline" className="mb-2" size="sm">
+                      {session}
+                    </Button>
+                  ))}
+                </div>
+              </div>
+              {/* Simple Month Grid */}
+              <div className="flex-1">
+                <h3 className="font-semibold mb-2">Months</h3>
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
+                  {["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"].map((month) => (
+                    <div key={month} className="bg-muted rounded p-2 text-center cursor-pointer hover:bg-accent hover:text-accent-foreground transition">
+                      {month}
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-4">
+                  <h4 className="font-semibold mb-1">Events This Month</h4>
+                  <ul className="list-disc pl-5 text-muted-foreground">
+                    {/* Example: List events for selected month here */}
+                    <li>25 Mar: Annual Tech Fest 2025</li>
+                    <li>10 Apr: Coding Marathon</li>
+                    <li>5-7 May: AI Workshop Series</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>

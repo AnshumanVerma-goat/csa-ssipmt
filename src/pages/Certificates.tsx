@@ -8,6 +8,9 @@ import { Search, Download, Award } from "lucide-react";
 const Certificates = () => {
   const [searchQuery, setSearchQuery] = useState("");
 
+  // Simulate a found certificate if searchQuery is not empty
+  const hasCertificate = searchQuery.trim().length > 0;
+
   return (
     <div className="py-12">
       <div className="container mx-auto px-4 max-w-4xl">
@@ -47,38 +50,39 @@ const Certificates = () => {
           </CardContent>
         </Card>
 
-        {/* Results Section - Will be populated after backend integration */}
         <div className="mt-8">
           <h2 className="text-2xl font-bold mb-4">Your Certificates</h2>
-          
-          <div className="text-center py-12 bg-muted/30 rounded-lg">
-            <p className="text-muted-foreground mb-4">
-              Enter your details above to view your certificates
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Certificate management will be integrated with the backend database
-            </p>
-          </div>
-
-          {/* Example Certificate Card (for reference) */}
-          <Card className="mt-6 border-2 border-dashed opacity-50">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4">
-                  <Award className="w-12 h-12 text-accent" />
-                  <div>
-                    <h3 className="font-semibold">Annual Tech Fest 2024</h3>
-                    <p className="text-sm text-muted-foreground">Winner - Coding Competition</p>
-                    <p className="text-xs text-muted-foreground">Issued on: March 25, 2024</p>
+          {hasCertificate ? (
+            <Card className="mt-6 border-2 border-accent">
+              <CardContent className="p-6">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <Award className="w-12 h-12 text-accent" />
+                    <div>
+                      <h3 className="font-semibold">Annual Tech Fest 2024</h3>
+                      <p className="text-sm text-muted-foreground">Winner - Coding Competition</p>
+                      <p className="text-xs text-muted-foreground">Issued on: March 25, 2024</p>
+                    </div>
                   </div>
+                  <a href="/sample-certificate.pdf" download>
+                    <Button variant="secondary">
+                      <Download className="w-4 h-4 mr-2" />
+                      Download
+                    </Button>
+                  </a>
                 </div>
-                <Button variant="secondary">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          ) : (
+            <div className="text-center py-12 bg-muted/30 rounded-lg">
+              <p className="text-muted-foreground mb-4">
+                Enter your details above to view your certificates
+              </p>
+              <p className="text-sm text-muted-foreground">
+                Certificate management will be integrated with the backend database
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>

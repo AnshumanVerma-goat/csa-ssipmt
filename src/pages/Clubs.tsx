@@ -18,10 +18,26 @@ const Clubs = () => {
         "Project showcases",
       ],
       color: "text-accent",
+      link: "/CSA",
     },
     {
       id: 2,
-      name: "Center of Excellence (CoE)",
+      name: "CSI (Computer Society of India)",
+      icon: Users,
+      description:
+        "CSI is a professional society for students and faculty interested in computer science and IT.",
+      activities: [
+        "CSI student chapter events",
+        "Workshops and seminars",
+        "Industry visits",
+        "Networking opportunities",
+      ],
+      color: "text-hero",
+      link: "/CSI",
+    },
+    {
+      id: 3,
+      name: "Centre of Excellence (COE)",
       icon: Lightbulb,
       description:
         "Dedicated to research, innovation, and advanced learning in emerging technologies and industry trends.",
@@ -32,20 +48,7 @@ const Clubs = () => {
         "Advanced certification courses",
       ],
       color: "text-primary",
-    },
-    {
-      id: 3,
-      name: "Tech Community Hub",
-      icon: Users,
-      description:
-        "A collaborative space bringing together all tech enthusiasts for knowledge sharing and networking.",
-      activities: [
-        "Peer learning sessions",
-        "Tech talks and discussions",
-        "Community projects",
-        "Networking events",
-      ],
-      color: "text-hero",
+      link: "/COE",
     },
   ];
 
@@ -81,7 +84,7 @@ const Clubs = () => {
                   </ul>
                 </div>
                 <Button variant="default" asChild>
-                  <Link to="/contact">Join Now</Link>
+                  <Link to={club.link}>View Club</Link>
                 </Button>
               </CardContent>
             </Card>

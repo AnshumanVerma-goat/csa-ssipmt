@@ -31,16 +31,22 @@ const Home = () => {
     },
   ];
 
+
   return (
     <div>
-      {/* Hero Section */}
+      {/* Hero Section with College Photo */}
       <section className="bg-hero relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-10 left-10 w-20 h-20 border-4 border-hero-accent rotate-45"></div>
           <div className="absolute bottom-20 right-20 w-16 h-16 border-4 border-hero-accent"></div>
           <div className="absolute top-1/2 left-1/4 w-12 h-12 border-4 border-hero-accent rounded-full"></div>
         </div>
-        <div className="container mx-auto px-4 py-24 relative z-10">
+        <div className="container mx-auto px-4 py-24 relative z-10 flex flex-col md:flex-row items-center gap-10">
+          <img
+            src="/placeholder.svg" // Replace with your actual college photo, e.g. /college-photo.jpg
+            alt="College"
+            className="w-full md:w-1/2 rounded-xl shadow-lg object-cover max-h-[350px] border-4 border-accent"
+          />
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Computer Science Association
