@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const csiFaculty = [
-  { name: "Dr. B. Verma", designation: "CSI Coordinator", photo: "/placeholder.svg" },
+  { name: "Dr. B. Verma", designation: "CSI Coordinator", photo: "/placeholder.jpg" },
   // Add more CSI faculty
 ];
 const csiMembers = [

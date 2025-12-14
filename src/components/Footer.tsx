@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-lg font-bold mb-4">CSA - SSIPMT</h3>
+            <h3 className="text-lg font-bold mb-4">CSE - SSIPMT</h3>
             <p className="text-sm opacity-90">
-              Computer Science Association of SSIPMT, fostering innovation and
+              Computer Science and Engineering of SSIPMT, fostering innovation and
               excellence in technology education.
             </p>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center text-sm opacity-90">
           <p>
-            &copy; {new Date().getFullYear()} Computer Science Association,
+            &copy; {new Date().getFullYear()} Computer Science and Engineering,
             SSIPMT. All rights reserved.
           </p>
         </div>

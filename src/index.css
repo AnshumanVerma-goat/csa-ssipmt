@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* CSA SSIPMT Color Scheme - From Reference Images */
+    /* CSE SSIPMT Color Scheme - From Reference Images */
     --background: 40 30% 96%;
     --foreground: 210 60% 15%;
 

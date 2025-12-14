@@ -43,13 +43,13 @@ const Home = () => {
         </div>
         <div className="container mx-auto px-4 py-24 relative z-10 flex flex-col md:flex-row items-center gap-10">
           <img
-            src="/placeholder.svg" // Replace with your actual college photo, e.g. /college-photo.jpg
+            src="/placeholder.jpg" // Replace with your actual college photo, e.g. /college-photo.jpg
             alt="College"
             className="w-full md:w-1/2 rounded-xl shadow-lg object-cover max-h-[350px] border-4 border-accent"
           />
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Computer Science Association
+              Computer Science and Engineering
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8">
               SSIPMT - Fostering Innovation, Excellence & Technical Leadership

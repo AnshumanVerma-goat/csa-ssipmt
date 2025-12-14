@@ -6,11 +6,11 @@ const About = () => {
     <div className="py-12">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6">About CSA</h1>
+          <h1 className="text-4xl font-bold mb-6">About CSE</h1>
           
           <div className="prose prose-lg mb-12">
             <p className="text-lg text-muted-foreground">
-              The Computer Science Association (CSA) at SSIPMT is a student-driven organization
+              The Computer Science and Engineering (CSE) at SSIPMT is a student-driven organization
               dedicated to fostering innovation, technical excellence, and leadership in the field
               of computer science and technology.
             </p>
