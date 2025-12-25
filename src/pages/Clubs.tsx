@@ -7,7 +7,7 @@ const Clubs = () => {
   const clubs = [
     {
       id: 1,
-      name: "Computer Science Association (CSA)",
+      name: "Computer Science and Engineering (CSE)",
       icon: Code,
       description:
         "The main technical club focused on computer science, programming competitions, and technology workshops.",
@@ -18,7 +18,7 @@ const Clubs = () => {
         "Project showcases",
       ],
       color: "text-accent",
-      link: "/CSA",
+      link: "/CSE",
     },
     {
       id: 2,

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const coeFaculty = [
-  { name: "Dr. C. Singh", designation: "COE Coordinator", photo: "/placeholder.svg" },
+  { name: "Dr. C. Singh", designation: "COE Coordinator", photo: "/placeholder.jpg" },
   // Add more COE faculty
 ];
 const coeMembers = [

@@ -12,7 +12,7 @@ import Certificates from "./pages/Certificates";
 import Clubs from "./pages/Clubs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import CSA from "./pages/CSA";
+import CSE from "./pages/CSA";
 import CSI from "./pages/CSI";
 import COE from "./pages/COE";
 import Registration from "./pages/Registration";
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/gallery" element={<Layout><Gallery /></Layout>} />
           <Route path="/certificates" element={<Layout><Certificates /></Layout>} />
           <Route path="/clubs" element={<Layout><Clubs /></Layout>} />
-          <Route path="/CSA" element={<Layout><CSA /></Layout>} />
+          <Route path="/CSE" element={<Layout><CSE /></Layout>} />
           <Route path="/CSI" element={<Layout><CSI /></Layout>} />
           <Route path="/COE" element={<Layout><COE /></Layout>} />
           <Route path="/Registration" element={<Layout><Registration /></Layout>} />

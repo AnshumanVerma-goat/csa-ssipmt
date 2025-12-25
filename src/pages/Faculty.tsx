@@ -5,17 +5,17 @@ const facultyList = [
   {
     name: "Dr. A. Sharma",
     designation: "Head of Department",
-    photo: "/placeholder.svg", // Replace with actual photo path
+    photo: "/placeholder.jpg", // Replace with actual photo path
   },
   {
     name: "Prof. B. Verma",
     designation: "Assistant Professor",
-    photo: "/placeholder.svg",
+    photo: "/placeholder.jpg",
   },
   {
     name: "Dr. C. Singh",
     designation: "Associate Professor",
-    photo: "/placeholder.svg",
+    photo: "/placeholder.jpg",
   },
   // Add more faculty as needed
 ];
